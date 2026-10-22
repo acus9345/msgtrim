@@ -1,4 +1,4 @@
-# chattrim
+# msgtrim
 
 Trim LLM chat history to a token budget while keeping it valid to send to the API.
 
@@ -9,13 +9,13 @@ Works with OpenAI Chat Completions messages (`tool_calls` + `role: "tool"`) and 
 ## Install
 
 ```sh
-npm install chattrim
+npm install msgtrim
 ```
 
 ## Quick start
 
 ```js
-import { trimChat } from "chattrim";
+import { trimChat } from "msgtrim";
 
 const messages = [
   { role: "system", content: "You are terse." },
@@ -45,7 +45,7 @@ The input array and its messages are never modified; the result holds the same m
 By default tokens are estimated at about 4 characters per token, plus a flat 1500 per image, audio clip or document. For exact counts, pass your own counter:
 
 ```js
-import { trimChat } from "chattrim";
+import { trimChat } from "msgtrim";
 import { encode } from "gpt-tokenizer";
 
 const trimmed = trimChat(messages, 8000, {
@@ -72,8 +72,8 @@ The default rough estimate for one message.
 ## Build from source
 
 ```sh
-git clone https://github.com/acus9345/chattrim.git
-cd chattrim
+git clone https://github.com/acus9345/msgtrim.git
+cd msgtrim
 npm install
 npm run build
 npm test

@@ -1,5 +1,5 @@
 {
-  "name": "chattrim",
+  "name": "msgtrim",
   "version": "0.1.0",
   "description": "Trim LLM chat history to a token budget while keeping it valid to send to the API.",
   "license": "MIT",
@@ -29,11 +29,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/acus9345/chattrim.git"
+    "url": "git+https://github.com/acus9345/msgtrim.git"
   },
-  "homepage": "https://github.com/acus9345/chattrim#readme",
+  "homepage": "https://github.com/acus9345/msgtrim#readme",
   "bugs": {
-    "url": "https://github.com/acus9345/chattrim/issues"
+    "url": "https://github.com/acus9345/msgtrim/issues"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",
